@@ -139,7 +139,7 @@ label { }
 /*-----------------------------------
     3. Buttons 
 -----------------------------------*/
-.btn { display: inline-block; padding: 14px 30px; margin-bottom: 0; font-size: 13px; font-weight: 800; 
+.btn { display: inline-block; padding: 30px 30px; margin-bottom: 0; font-size: 13px; font-weight: 800; 
     letter-spacing: 1px; line-height: 1.42857143; text-align: center; border: none; 
     text-transform: uppercase; border-radius: 100px;font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
 .btn-default { color: #; background-color:#2e7d32; }
