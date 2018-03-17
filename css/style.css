@@ -340,7 +340,7 @@ label { }
    ----------------------*/
 
 .logo { }
-.header {background-color: #fff;z-index: 9999;position: relative;padding-top: 20px;padding-bottom: 20px;}
+.header {background-color: #fff;z-index: 9999;position: relative;padding-top: 10px;padding-bottom: 10px;}
 .top-text { text-align: right; }
 .top-text .text-block { padding-left: 20px; color: #fff; line-height: 18px; }
 .call-block { }
