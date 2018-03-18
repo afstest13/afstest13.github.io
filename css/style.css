@@ -78,7 +78,7 @@ p { margin: 0 0 20px; }
 p:last-child { margin-bottom: 0px; }
 ul, ol { margin: 0; }
 ul li, ol li { }
-a { color: #2e7d32; text-decoration: none; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+a {word-wrap:  break-word;color: #2e7d32;text-decoration: none;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;}
 a:focus, a:hover { text-decoration: none; color: #8e7424; }
  
 b, strong {
