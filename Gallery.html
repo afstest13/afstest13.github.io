@@ -16,7 +16,10 @@
     <!-- Font Awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Style -->
+
     <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/imagemodal.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,23 +28,28 @@
     <![endif]-->
 </head>
 
-<body>
+<body style="height:100%;">
+    <div id="myModal" class="modal">
+                  <span class="close">×</span>
+                  <img class="modal-content" id="img01">
+                  <div id="caption"></div>
+                </div>
     <div class="header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
-                    <a href="index.html"><img src="images/logox.png"  style="height:75px;
+                    <a href="index.html"><img src="images/logox.png" style="height:75px;
                     "></a>
                 </div>
                  <div class="col-lg-2 col-md-2 col-sm-9 col-xs-9">
-                    <a href="index.html"><img src="images/logotext.png"  style="height:60px;
+                    <a href="index.html"><img src="images/logotext.png" style="height:60px;
                         margin-top:10px;
-                        width:100%;
+                        width:100%
                     "></a>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+                <div class="col-lg-1 hidden-md col-sm-12 col-xs-12">
                 </div>
-                <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12">
+                <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
                     <div class="navigation">
                         <div id="navigation">
                             <ul>
@@ -87,102 +95,87 @@
             </div>
         </div>
     </div>
-    <div class="page-header">
+    <div class="space-medium bg-default">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="page-caption">
-                        <h2 class="page-title">Testimonial</h2>
-                        <div class="page-breadcrumb">
-                            <ol class="breadcrumb">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="active">Testimonial</li>
-                            </ol>
+                <div class="row">
+                <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-title mb60 text-center">
+                        <!-- section title start-->
+                        <h1 style="color: #210747;">Video Gallery</h1>
+                        <h5 class="small-title" style="color:#2e7d32">we have a few stories to tell</h5>
+                    </div>
+                     <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+                        <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="card">
+                                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/?listType=playlist&ampr;list=PLE3rGHvwdwuO9EqrOD3t1omM03oBJI7ll" frameborder="0" allowfullscreen></iframe>
+                            </div>
                         </div>
+                        <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="card">
+                                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/?listType=playlist&ampr;list=PLE3rGHvwdwuO9EqrOD3t1omM03oBJI7ll" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="card">
+                                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/?listType=playlist&ampr;list=PLE3rGHvwdwuO9EqrOD3t1omM03oBJI7ll" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+                <div class="row" style="margin-top:40px;">
+                    <div class=" col-lg-offset-5 col-lg-2 col-md-offset-5 col-md-2 col-sm-offset-5 col-sm-2 col-xs-offset-2 col-xs-8 ">
+                    
+                    <a href="AllVideos.html"><button type="button" style="width:100%;"class="btn btn-outline-primary">View All</button></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="content">
+    <div class="space-medium">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="testimonial-block">
-                        <!-- testimonial block -->
-                        <div class="testimonial-content">
-                            <p class="testimonial-text">“Free Beauty Website Templates that help me a lot to build easy and fast my hair shop website in 2 days”</p>
-                        </div>
-                        <div class="testimonial-info">
-                            <h4 class="testimonial-name">Reba Truong</h4>
-                            <span class="testimonial-meta">34 Year</span> <span class="testimonial-meta">Customer</span> </div>
+                <div class="section-title mb60 text-center">
+                        <!-- section title start-->
+                        <h1 style="color: #210747;">Image Gallery</h1>
+                        <h5 class="small-title" style="color:#2e7d32">we have a few ideas to depict</h5>
                     </div>
-                    <!--/. testimonial block -->
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="testimonial-block">
-                        <!-- testimonial block -->
-                        <div class="testimonial-content">
-                            <p class="testimonial-text">“Free bootstrap responsive website templates 2017 its best ever i found for my hair salon”</p>
+            </div>
+            <div class="row"> 
+                <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="card">
+                                <img id="myImg" src="images/carousel/1.jpg" alt="Northern Lights, Norway" width="300" height="200">
+                            </div>
                         </div>
-                        <div class="testimonial-info">
-                            <h4 class="testimonial-name">Thomas Warren</h4>
-                            <span class="testimonial-meta">34 Year</span> <span class="testimonial-meta ">Customer</span> </div>
-                    </div>
-                    <!--/. testimonial block -->
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="testimonial-block">
-                        <!-- testimonial block -->
-                        <div class="testimonial-content">
-                            <p class="testimonial-text">“Best Free HTML CSS Website Templates for salon and hair cutting business. All features clean designed”</p>
+
+                <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="card">
+                               <img id="myImg" src="images/carousel/1.jpg" alt="Northern Lights, Norway" width="300" height="200">
+                            </div>
                         </div>
-                        <div class="testimonial-info">
-                            <h4 class="testimonial-name">Carie Willis</h4>
-                            <span class="testimonial-meta">34 Year</span> <span class="testimonial-meta">Customer</span> </div>
-                    </div>
-                    <!--/. testimonial block -->
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="testimonial-block">
-                        <!-- testimonial block -->
-                        <div class="testimonial-content">
-                            <p class="testimonial-text">“Free Beauty Website Templates that help me a lot to build easy and fast my hair shop website in 2 days”</p>
+
+                <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="card">
+                               <img id="myImg" src="images/carousel/1.jpg" alt="Northern Lights, Norway" width="300" height="200">
+                            </div>
                         </div>
-                        <div class="testimonial-info">
-                            <h4 class="testimonial-name">Reba Truong</h4>
-                            <span class="testimonial-meta">34 Year</span> <span class="testimonial-meta">Customer</span> </div>
+            </div>
+            <div class="row" style="margin-top:40px;">
+                    <div class=" col-lg-offset-5 col-lg-2 col-md-offset-5 col-md-2 col-sm-offset-5 col-sm-2 col-xs-offset-2 col-xs-8 ">
+                    
+                    <a href="AllVideos.html"><button type="button" style="width:100%;"class="btn btn-outline-primary">View All</button></a>
                     </div>
-                    <!--/. testimonial block -->
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="testimonial-block">
-                        <!-- testimonial block -->
-                        <div class="testimonial-content">
-                            <p class="testimonial-text">“Free bootstrap responsive website templates 2017 its best ever i found for my hair salon”</p>
-                        </div>
-                        <div class="testimonial-info">
-                            <h4 class="testimonial-name">Thomas Warren</h4>
-                            <span class="testimonial-meta">34 Year</span> <span class="testimonial-meta ">Customer</span> </div>
-                    </div>
-                    <!--/. testimonial block -->
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="testimonial-block">
-                        <!-- testimonial block -->
-                        <div class="testimonial-content">
-                            <p class="testimonial-text">“Best Free HTML CSS Website Templates for salon and hair cutting business. All features are clean designed”</p>
-                        </div>
-                        <div class="testimonial-info">
-                            <h4 class="testimonial-name">Carie Willis</h4>
-                            <span class="testimonial-meta">34 Year</span> <span class="testimonial-meta">Customer</span> </div>
-                    </div>
-                    <!--/. testimonial block -->
-                </div>
+                
             </div>
         </div>
     </div>
-    <div class="footer">
+    
+ 
+    
+     <div class="footer">
         <!-- footer-->
         <div class="container">
             <div class="footer-block">
@@ -247,6 +240,7 @@
         </div>
     </div>
     <!-- /.footer-->
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -254,6 +248,7 @@
     <script src="js/menumaker.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/sticky-header.js"></script>
+    <script src="js/imagemodal.js"></script>
 </body>
 
 </html>
