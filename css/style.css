@@ -139,11 +139,11 @@ label { }
 /*-----------------------------------
     3. Buttons 
 -----------------------------------*/
-.btn { display: inline-block; padding: 30px 30px; margin-bottom: 0; font-size: 13px; font-weight: 800; 
+.btn { display: inline-block; padding: 14px 10px; margin-bottom: 0; font-size: 13px; font-weight: 800; 
     letter-spacing: 1px; line-height: 1.42857143; text-align: center; border: none; 
     text-transform: uppercase; border-radius: 100px;font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
-.btn-default { color: #; background-color:#2e7d32; }
-.btn-default:hover { color: #fff; background-color: #210747; border-color: #210747; }
+.btn-default { color: #FFFFFF; padding-bottom: 18px;background-color:#2e7d32;text-align: "cente" }
+.btn-default:hover {  color: #fff; background-color: #210747; border-color: #210747; }
 .btn-default.focus, .btn-default:focus { color: #fff; background-color: #8e7424; border-color: #8e7424; }
 .btn-primary { background-color: #FFFFFF; color: #2e7d32; }
 .btn-primary:hover { background-color: #dddbd4; color: #2e7d32 }
@@ -673,7 +673,7 @@ address { margin-bottom: 20px; font-style: normal; line-height: 1.42857143; }
 .widget ul li a.active { color: #2e7d32; }
 .widget ul li a:hover { color: #2e7d32; }
 .widget-search { }
-.widget-search .input-group-addon { color: #fff; text-align: center; background-color: #2e7d32; border: 1px solid #2e7d32; border-left: transparent; }
+.widget-search .input-group-addon { height:100% ; color: #fff; text-align: center; background-color: #2e7d32; border: 1px solid #2e7d32; border-left: transparent; }
 .widget-categories { }
 .widget-categories ul { }
 .widget-categories ul li { }
