@@ -914,7 +914,7 @@ opacity: .5; }
       padding: 4px;
       width: 190px;
       position: fixed;
-      right: -160px;
+      right: -150px;
       z-index: 1000;
       font: normal normal 10px Arial;
       -webkit-transition: all .25s ease;
@@ -945,7 +945,8 @@ opacity: .5; }
     }
 
     .float-fb {
-      top: 160px;
+        top: 325px;
+      
     }
 
     .float-tw {
@@ -957,7 +958,7 @@ opacity: .5; }
     }
 
     .float-rs {
-      top: 325px;
+      top: 160px;
     }
 
     .float-ig {
