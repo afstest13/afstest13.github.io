@@ -17,6 +17,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,7 +27,8 @@
 </head>
 
 <body style="height:100%;">
-    <div class="header">
+
+    <div class="header" id ="header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
@@ -87,6 +89,66 @@
             </div>
         </div>
     </div>
+      <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header" style="
+    text-align:  center;
+    background-color: #210747;
+    ">
+          <button type="button" class="close" style="color:#ffffff;" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="color:#ffffff;">Book an appointment</h4>
+        </div>
+        <div class="modal-body">
+      <div class="panel-body">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="form-group">
+                  <label class="control-label">First Name</label>
+                  <input type="text" class="form-control" name="fname" id="fname">
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="form-group">
+                  <label class="control-label">Last Name</label>
+                  <input type="text" class="form-control" name="lname" id="lname">
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-6">
+               <div class="form-group">
+                  <label class="control-label">Email</label>
+                  <input type="text" class="form-control" name="email" id="email">
+               </div>
+            </div>
+            <div class='col-md-6'>
+               <div class="form-group">
+                  <label class="control-label">Appointment Time</label>
+                  <div class='input-group date' id='datetimepicker1'>
+                     <input type='text' class="form-control" id="date" />
+                     <span class="input-group-addon">
+                     <span class="glyphicon glyphicon-calendar"></span>
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+        </div>
+        <div class="modal-footer">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-2"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-8">
+          <button type="button" style=" width: 100px;
+              margin: 0 auto;
+              display:block;"class="btn btn-default" onclick="addAppointment()">submit</button>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-2"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="space-medium bg-default">
         <div class="container">
             <div class="row">
@@ -111,7 +173,7 @@
                         <h1 class="widget-title" style="color:#FFFFFF">Book Your Appointment</h1>
                         <p   style="color:#FFFFFF">Get to know the most profitable mutual funds, the best insurance strategies that suit you and build a perfect portfolio!
                         </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a align="text-center" style="color:#2e7d32" href="mailto:arihantfs_2007@yahoo.co.in" class="btn btn-primary btn-lg" >Book an appointment</a>
+                        <button align="text-center" style="color:#2e7d32" class="btn btn-primary btn-lg" onclick="showModal()" >Book an appointment</a>
                     </div>
                 </div>
                 </div>
@@ -262,6 +324,27 @@
     <script src="js/menumaker.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/sticky-header.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="js/firebaseinitscript.js"></script>
+    <script src="js/firebaseupdatedb.js"></script>
+    <script type="text/javascript">
+    function showModal(){
+        $('#myModal').modal('show');
+        var head=document.getElementById("header");
+        head.style.display="none";
+    }
+    $("#myModal").on("hidden.bs.modal", function () {
+    // put your default event here
+        console.log("Modal was closed");
+        var head=document.getElementById("header");
+        head.style.display="block";
+
+        });
+    $('#datetimepicker1').datetimepicker();
+    </script>
+
 <!-- slide bar -->
 
 <div class="float-sm">  

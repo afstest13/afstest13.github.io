@@ -142,9 +142,9 @@ label { }
 .btn { display: inline-block; padding: 14px 10px; margin-bottom: 0; font-size: 13px; font-weight: 800; 
     letter-spacing: 1px; line-height: 1.42857143; text-align: center; border: none; 
     text-transform: uppercase; border-radius: 100px;font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
-.btn-default { color: #FFFFFF; padding-bottom: 18px;background-color:#2e7d32;text-align: "cente" }
+.btn-default {color: #FFFFFF;padding-bottom: 18px;background-color:#2e7d32;text-align: "center";}
 .btn-default:hover {  color: #fff; background-color: #210747; border-color: #210747; }
-.btn-default.focus, .btn-default:focus { color: #fff; background-color: #8e7424; border-color: #8e7424; }
+.btn-default.focus, .btn-default:focus {color: #fff;background-color: #2E7D3C;border-color: #2E7D3C;}
 .btn-primary { background-color: #FFFFFF; color: #2e7d32; }
 .btn-primary:hover { background-color: #dddbd4; color: #2e7d32 }
 .btn-primary.focus, .btn-primary:focus { }
@@ -863,6 +863,7 @@ opacity: .5; }
 
     /* Add some padding inside the card container */
     .container {
+        height:  100%;
         width:100%;
         padding: 16px 16px;
     }
