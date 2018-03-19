@@ -9,6 +9,7 @@ function addSubscriber(){
 	  'User-Email': emailaddrstring
 	});
 	console.log("Subscriber Added Successfully");
+	showSnackbar(1);
 }
 function addAppointment()
 {
@@ -27,5 +28,5 @@ function addAppointment()
 	});
 	console.log("Appointment Added Successfully");
 	$('#myModal').modal('hide');
-	showSnackbar();
+	showSnackbar(2);
 }

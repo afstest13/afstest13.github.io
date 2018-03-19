@@ -1,6 +1,11 @@
-function showSnackbar() {
+function showSnackbar(type) {
     // Get the snackbar DIV
-    var x = document.getElementById("snackbar")
+    if(type==1){
+    var x = document.getElementById("snackbar");
+	}else
+	{
+		var x = document.getElementById("snackbar2");
+	}
 
     // Add the "show" class to DIV
     x.className = "show";
