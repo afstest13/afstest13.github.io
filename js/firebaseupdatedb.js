@@ -27,4 +27,5 @@ function addAppointment()
 	});
 	console.log("Appointment Added Successfully");
 	$('#myModal').modal('hide');
+	showSnackbar();
 }

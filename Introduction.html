@@ -18,6 +18,7 @@
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+      <link href="css/snackbar.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -316,7 +317,7 @@
         </div>
     </div>
     <!-- /.footer-->
-    
+    <div id="snackbar">Appointment has been made.</br>We will get back to you once it is confirmed</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -328,7 +329,9 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <script src="js/firebaseinitscript.js"></script>
+    <script src="js/snackbar.js"></script>
     <script src="js/firebaseupdatedb.js"></script>
+    
     <script type="text/javascript">
     function showModal(){
         $('#myModal').modal('show');
@@ -340,7 +343,6 @@
         console.log("Modal was closed");
         var head=document.getElementById("header");
         head.style.display="block";
-
         });
     $('#datetimepicker1').datetimepicker();
     </script>
